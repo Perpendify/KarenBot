@@ -1,6 +1,13 @@
 
 <!DOCTYPE html>
 <html>
+<head> 
+    <script type="text/javascript">
+function openChat() {
+    Kommunicate.displayKommunicateWidget(true); //This will show the widget
+}
+</script>
+</head>
 <body>
 
 <h1>NTU KarenBot Demonstration</h1>
@@ -24,6 +31,8 @@
     })(document, window.kommunicate || {});
 </script>
 
+    <input type="button" value="HELP" id="button" disabled="true" onclick="openChat()">
+    
 </p>
 
 </body>
