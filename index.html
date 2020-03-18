@@ -2,11 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head> 
-    <script type="text/javascript">
-function openChat() {
-    Kommunicate.displayKommunicateWidget(true); //This will show the widget
-}
-</script>
+
 </head>
 <body>
 
@@ -20,6 +16,7 @@ function openChat() {
 <p>The chatbot data is run through Kommunicate integration and output in a script tag.</p> -->
 
 <p>
+    
     <script type="text/javascript">
     /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
     (function(d, m){
@@ -30,8 +27,14 @@ function openChat() {
       window.kommunicate = m; m._globals = kommunicateSettings;
     })(document, window.kommunicate || {});
 </script>
-
-    <input type="button" value="HELP" id="button" disabled="true" onclick="openChat()">
+test
+    
+        <script type="text/javascript">
+function openChat() {
+    Kommunicate.displayKommunicateWidget(true); //This will show the widget
+}
+</script>
+    <input type="button" value="test" id="button" onclick="openChat()">
     
 </p>
 
